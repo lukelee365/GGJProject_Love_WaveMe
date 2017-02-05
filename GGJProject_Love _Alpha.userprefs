@@ -1,0 +1,18 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/WaveMe/Script/StrangerDance.cs">
+    <Files>
+      <File FileName="Assets/WaveMe/Script/GirlMovement.cs" Line="43" Column="1" />
+      <File FileName="Assets/WaveMe/Script/PlayerMovement.cs" Line="44" Column="21" />
+      <File FileName="Assets/FadeOut.cs" Line="15" Column="3" />
+      <File FileName="Assets/WhichScreenToGoTO.cs" Line="3" Column="1" />
+      <File FileName="Assets/WaveMe/Script/TimeManager.cs" Line="27" Column="45" />
+      <File FileName="Assets/WaveMe/Script/LoseConditionManager.cs" Line="17" Column="26" />
+      <File FileName="Assets/WaveMe/Script/StrangerDance.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

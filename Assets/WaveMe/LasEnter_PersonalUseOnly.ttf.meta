@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 501de0caa002d4b8bb6b45fe35d9be56
+timeCreated: 1485116163
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Las Enter Personal Use Only
+  fontNames:
+  - Las Enter Personal Use Only
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
