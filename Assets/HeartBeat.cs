@@ -4,31 +4,35 @@ using UnityEngine;
 
 public class HeartBeat : MonoBehaviour {
 	private AudioSource heartBeatAudioSource;
-	private GameObject heart;
-	private Animator heartAnim;
+	public int audioIndex;
 	public float heartBeatTime;
 	public float minHearRate;
 	public float maxHeartRate;
 	public float maxDistBetweenTwo;
-	private GameObject girl;
+	public GameObject Target;
+	public GameObject heart;
+	[HideInInspector]
+	public Animator heartAnim;
 	// Use this for initialization
 	void Start () {
-		girl = GameObject.Find ("Rose");
-		heart = GameObject.FindGameObjectWithTag ("Heart");
 		AudioSource[] audioSources = GameObject.Find("AudioManager").GetComponents<AudioSource> ();
-		heartBeatAudioSource = audioSources [2];
-		heartAnim = heart.GetComponent<Animator> ();
-		StartCoroutine("HeartBeatFrequnecy");
+		heartBeatAudioSource = audioSources [audioIndex];
+		if (heart != null) {
+			heartAnim = heart.GetComponent<Animator> ();
+		}
+			StartCoroutine ("HeartBeatFrequnecy");
+		
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		if(heart!=null)
 		ControlhearBeatTime ();
 	}
 
 
 	public float DistBetween(){
-		return Vector3.Distance (transform.position,girl.transform.position);
+		return Vector3.Distance (transform.position,Target.transform.position);
 	}
 
 	// control the Time Frequency
@@ -51,12 +55,11 @@ public class HeartBeat : MonoBehaviour {
 	IEnumerator HeartBeatFrequnecy() {
 		float i = 0;
 		while (true) {
-			yield return new WaitForSeconds(heartBeatTime);
-
-			heartAnim.SetTrigger ("HeartBeats");
-			heartBeatAudioSource.Play ();
-
-		
+				yield return new WaitForSeconds (heartBeatTime);
+			if (heart != null) {
+				heartAnim.SetTrigger ("HeartBeats");
+				heartBeatAudioSource.Play ();
+			}
 
 		}
 
