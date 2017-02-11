@@ -51,7 +51,7 @@ public class FireABeam : MonoBehaviour {
 				playerRg.useGravity = true;
 				//Disable other people's heart
 				if (hitPeople != null) {
-					Debug.Log ("Here");
+
 					HeartBeat otherHeartScript = hitPeople.GetComponent<HeartBeat> ();
 					otherHeartScript.heart = null;
 				}

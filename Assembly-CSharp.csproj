@@ -46,7 +46,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CheckPoints.cs" />
      <Compile Include="Assets\Crosshair.cs" />
+     <Compile Include="Assets\CubeM.cs" />
      <Compile Include="Assets\Elemental Free\Scripts\GE_ELF_Demo.cs" />
      <Compile Include="Assets\FadeOut.cs" />
      <Compile Include="Assets\FireABeam.cs" />
@@ -66,17 +68,15 @@
      <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_DemoPlaySound.cs" />
      <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_OpenOtherScene.cs" />
      <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo Basic (CSharp)\Scripts\GUIAnimatorFREEDemo.cs" />
+     <Compile Include="Assets\GirlAI.cs" />
      <Compile Include="Assets\HeartBeat.cs" />
+     <Compile Include="Assets\RespawnPlayer.cs" />
      <Compile Include="Assets\TryThings.cs" />
      <Compile Include="Assets\WaveMe\Script\AudioManager.cs" />
-     <Compile Include="Assets\WaveMe\Script\GirlMovement.cs" />
      <Compile Include="Assets\WaveMe\Script\GreatZeuslightingmaker.cs" />
      <Compile Include="Assets\WaveMe\Script\Lightning.cs" />
      <Compile Include="Assets\WaveMe\Script\LoseConditionManager.cs" />
-     <Compile Include="Assets\WaveMe\Script\Moving.cs" />
      <Compile Include="Assets\WaveMe\Script\PassengerGenerator.cs" />
-     <Compile Include="Assets\WaveMe\Script\PlayerMovement.cs" />
-     <Compile Include="Assets\WaveMe\Script\PlayerMovement2.cs" />
      <Compile Include="Assets\WaveMe\Script\StrangerDance.cs" />
      <Compile Include="Assets\WaveMe\Script\TimeManager.cs" />
      <Compile Include="Assets\WhichScreenToGoTO.cs" />
@@ -108,9 +108,6 @@
      <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
      <None Include="Assets\Standard Assets\Effects\LensAberrations\Resources\LensAberrations.shader" />
      <None Include="Assets\Standard Assets\Effects\TonemappingColorGrading\Resources\HistogramCompute.compute" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -125,9 +122,6 @@
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Purchasing">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.VR">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
